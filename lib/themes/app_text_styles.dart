@@ -6,7 +6,7 @@ class AppTextStyles {
   static const titleLarge = TextStyle(
     fontSize: 22,
     fontWeight: FontWeight.w800,
-    color: AppColors.text, // <-- using centralized color
+    color: Color.fromRGBO(33, 33, 33, 1), // <-- using centralized color
     fontFamily: 'Inter', // Match font-family
   );
 

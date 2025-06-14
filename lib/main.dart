@@ -3,6 +3,7 @@ import 'package:provider/provider.dart';
 import 'themes/app_theme.dart';
 import 'providers/theme_provider.dart';
 import 'views/dashboard_view.dart';
+import 'views/progress_view.dart';
 
 void main() {
   runApp(
@@ -42,7 +43,7 @@ class _HomeScreenState extends State<HomeScreen> {
   final List<Widget> _screens = [
     DashboardView(),
     Center(child: Text('Lessons')),
-    Center(child: Text('Practice')),
+    ProgressView(),
     Center(child: Text('Profile')),
   ];
 
@@ -69,7 +70,7 @@ class _HomeScreenState extends State<HomeScreen> {
               children: [
                 _buildNavItem(0, Icons.home_outlined, Icons.home, 'Dashboard'),
                 _buildNavItem(1, Icons.calendar_today_outlined, Icons.calendar_today, 'Lessons'),
-                _buildNavItem(2, Icons.menu_book_outlined, Icons.menu_book, 'Practice'),
+                _buildNavItem(2, Icons.analytics_outlined, Icons.analytics, 'Practice'),
                 _buildNavItem(3, Icons.person_outline, Icons.person, 'Profile'),
               ],
             ),
